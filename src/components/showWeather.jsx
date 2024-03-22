@@ -23,8 +23,7 @@ export default function WeatherShower() {
         <div className="temperature">{`Temperature: ${temperature}`}</div>
         <div className="description">{`Description: ${description}`}</div>
         <div className="feelsLike">{`Feels Like: ${feelsLike}`}</div>
-        <div className="humidity">{`Humidity: ${humidity}`}</div>
-        <div className="humidity">{`Humidity: ${humidity}`}</div>
+        <div className="humidity">{`Humidity: ${humidity}%`}</div>
       </center>
     </>
   );

@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 
 const context = createContext({
-  weatherProvider: () => {},
+  weatherProvider: () => { },
   weatherData: null,
 });
 
@@ -10,7 +10,7 @@ function ContextProvider({ children }) {
 
   async function weatherHandler(cityName) {
     let CityName = cityName;
-    let key = "98cfd0e1781a771fd5daeaf714535f22";
+    let key = null
     let requestURL = `https://api.openweathermap.org/data/2.5/weather?q=${CityName}&appid=${key}`;
 
     let response = await fetch(requestURL);
